@@ -509,9 +509,7 @@ p { margin: 0 0 1.15rem; }
   height: 100%;
   object-fit: cover;
   object-position: center 22%;
-  filter: grayscale(100%);
 }
-.member:hover .member__photo img { filter: grayscale(0%); }
 
 .member h3 { font-size: 1.2rem; margin-bottom: 0.2rem; }
 
@@ -550,9 +548,7 @@ p { margin: 0 0 1.15rem; }
   width: 100%; height: 100%;
   object-fit: cover;
   object-position: center 20%;
-  filter: grayscale(100%);
 }
-.founder:hover .founder__photo img { filter: grayscale(0%); }
 .founder__bio h2 { font-size: 1.9rem; margin-bottom: 0.25rem; }
 .founder__bio .member__role { margin-bottom: 1.1rem; }
 .founder__bio p { color: var(--ink-soft); }
