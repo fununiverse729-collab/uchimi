@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Research · Uchumi</title>
+  <title>Research · Uchimi</title>
   <meta name="description" content="Articles and working papers on the microeconomics of development in Kenya and East Africa.">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -15,7 +15,7 @@
   <header class="masthead">
     <div class="wrap masthead__inner">
       <a class="brand" href="index.html">
-        <span class="brand__name">Uchumi</span>
+        <span class="brand__name">Uchimi</span>
         <span class="brand__tag">Economic Research Initiative</span>
       </a>
       <nav class="nav" aria-label="Primary">
@@ -40,20 +40,20 @@
 
   <main class="section wrap">
 
-      <div class="filters">
+      <div class="filters" role="group" aria-label="Filter by theme">
         <span>Filter by theme:</span>
-        <a href="research.html" class="is-active">All</a>
-        <a href="#">Informality</a>
-        <a href="#">Access to Capital</a>
-        <a href="#">Labour Markets</a>
-        <a href="#">Infrastructure</a>
-        <a href="#">Productivity</a>
-        <a href="#">Development Finance</a>
+        <button type="button" class="is-active" data-filter="all">All</button>
+        <button type="button" data-filter="Informality">Informality</button>
+        <button type="button" data-filter="Access to Capital">Access to Capital</button>
+        <button type="button" data-filter="Labour Markets">Labour Markets</button>
+        <button type="button" data-filter="Infrastructure">Infrastructure</button>
+        <button type="button" data-filter="Productivity">Productivity</button>
+        <button type="button" data-filter="Development Finance">Development Finance</button>
       </div>
 
     <div class="archive">
 
-      <a class="archive__item" href="articles/fertilizer-subsidy-maize-productivity.html">
+      <a class="archive__item" data-tag="Productivity" href="articles/fertilizer-subsidy-maize-productivity.html">
         <div class="archive__date">
           14 Oct 2026
           <span class="tag">Productivity</span>
@@ -65,7 +65,7 @@
         </div>
       </a>
 
-      <a class="archive__item" href="articles/digital-credit-household-debt.html">
+      <a class="archive__item" data-tag="Access to Capital" href="articles/digital-credit-household-debt.html">
         <div class="archive__date">
           22 Sep 2026
           <span class="tag">Access to Capital</span>
@@ -77,7 +77,7 @@
         </div>
       </a>
 
-      <a class="archive__item" href="articles/education-employment-mismatch.html">
+      <a class="archive__item" data-tag="Labour Markets" href="articles/education-employment-mismatch.html">
         <div class="archive__date">
           2 Sep 2026
           <span class="tag">Labour Markets</span>
@@ -89,7 +89,7 @@
         </div>
       </a>
 
-      <a class="archive__item" href="articles/agricultural-cooperatives.html">
+      <a class="archive__item" data-tag="Productivity" href="articles/agricultural-cooperatives.html">
         <div class="archive__date">
           15 Aug 2026
           <span class="tag">Productivity</span>
@@ -101,7 +101,7 @@
         </div>
       </a>
 
-      <a class="archive__item" href="articles/electricity-reliability-productivity.html">
+      <a class="archive__item" data-tag="Infrastructure" href="articles/electricity-reliability-productivity.html">
         <div class="archive__date">
           28 Jul 2026
           <span class="tag">Infrastructure</span>
@@ -113,7 +113,7 @@
         </div>
       </a>
 
-      <a class="archive__item" href="articles/youth-entrepreneurship-capital.html">
+      <a class="archive__item" data-tag="Access to Capital" href="articles/youth-entrepreneurship-capital.html">
         <div class="archive__date">
           10 Jul 2026
           <span class="tag">Access to Capital</span>
@@ -125,7 +125,7 @@
         </div>
       </a>
 
-      <a class="archive__item" href="articles/cost-of-being-poor.html">
+      <a class="archive__item" data-tag="Informality" href="articles/cost-of-being-poor.html">
         <div class="archive__date">
           22 Jun 2026
           <span class="tag">Informality</span>
@@ -137,7 +137,7 @@
         </div>
       </a>
 
-      <a class="archive__item" href="articles/remittances-vs-aid.html">
+      <a class="archive__item" data-tag="Development Finance" href="articles/remittances-vs-aid.html">
         <div class="archive__date">
           5 Jun 2026
           <span class="tag">Development Finance</span>
@@ -149,7 +149,7 @@
         </div>
       </a>
 
-      <a class="archive__item" href="articles/chama-networks.html">
+      <a class="archive__item" data-tag="Access to Capital" href="articles/chama-networks.html">
         <div class="archive__date">
           18 May 2026
           <span class="tag">Access to Capital</span>
@@ -161,7 +161,7 @@
         </div>
       </a>
 
-      <a class="archive__item" href="articles/land-title-underinvestment.html">
+      <a class="archive__item" data-tag="Access to Capital" href="articles/land-title-underinvestment.html">
         <div class="archive__date">
           30 Apr 2026
           <span class="tag">Access to Capital</span>
@@ -173,7 +173,7 @@
         </div>
       </a>
 
-      <a class="archive__item" href="articles/boda-boda-economy.html">
+      <a class="archive__item" data-tag="Labour Markets" href="articles/boda-boda-economy.html">
         <div class="archive__date">
           9 Apr 2026
           <span class="tag">Labour Markets</span>
@@ -185,7 +185,7 @@
         </div>
       </a>
 
-      <a class="archive__item" href="articles/mobile-money-missing-middle.html">
+      <a class="archive__item" data-tag="Informality" href="articles/mobile-money-missing-middle.html">
         <div class="archive__date">
           26 Mar 2026
           <span class="tag">Informality</span>
@@ -204,7 +204,7 @@
     <div class="wrap">
       <div class="site-foot__inner">
         <div class="site-foot__brand">
-          Uchumi
+          Uchimi
           <span>Economic Research Initiative</span>
         </div>
         <nav aria-label="Footer">
@@ -216,11 +216,25 @@
         </nav>
       </div>
       <p class="site-foot__legal">
-        © 2026 Uchumi Economic Research Initiative · A student project at La Garenne International School ·
+        © 2026 Uchimi Economic Research Initiative · A student project at La Garenne International School ·
         Views expressed are the authors' own.
       </p>
     </div>
   </footer>
+
+  <script>
+    (function () {
+      var buttons = document.querySelectorAll('.filters button');
+      var items = document.querySelectorAll('.archive__item');
+      buttons.forEach(function (btn) {
+        btn.addEventListener('click', function () {
+          var f = btn.getAttribute('data-filter');
+          buttons.forEach(function (b) { b.classList.toggle('is-active', b === btn); });
+          items.forEach(function (it) { it.style.display = (f === 'all' || it.getAttribute('data-tag') === f) ? '' : 'none'; });
+        });
+      });
+    })();
+  </script>
 
 </body>
 </html>

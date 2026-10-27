@@ -1,5 +1,5 @@
 /* =========================================================================
-   Uchumi — Economic Research Initiative
+   Uchimi — Economic Research Initiative
    Shared stylesheet
    -------------------------------------------------------------------------
    Design notes:
@@ -576,7 +576,8 @@ p { margin: 0 0 1.15rem; }
   margin: 0;
   padding: 0;
 }
-.contact-list li {
+.contact-list li,
+.contact-list > div {
   padding: 1.1rem 0;
   border-bottom: 1px solid var(--rule);
 }
@@ -928,3 +929,8 @@ figcaption b { color: var(--ink-soft); font-weight: 600; }
   .article__body { font-size: 1.08rem; }
   .section__head { flex-direction: column; align-items: flex-start; gap: 0.3rem; }
 }
+
+/* Filter buttons and contact list (added) */
+.filters button { font: inherit; background: none; border: 0; padding: 0; color: var(--ink-soft); cursor: pointer; }
+.filters button:hover { color: var(--accent-ink); }
+.filters button.is-active { color: var(--ink); font-weight: 600; }
