@@ -1,5 +1,5 @@
 /* =========================================================================
-   Uchimi — Economic Research Initiative
+   Uchumi — Economic Research Initiative
    Shared stylesheet
    -------------------------------------------------------------------------
    Design notes:
@@ -173,7 +173,7 @@ a { color: inherit; }
   width: 100%;
   height: 100%;
   object-fit: cover;
-  object-position: center 50%;
+  object-position: center 56%;
   display: block;
 }
 .skyline__meta {
@@ -502,7 +502,16 @@ p { margin: 0 0 1.15rem; }
   font-size: 0.78rem;
   letter-spacing: 0.04em;
   margin-bottom: 1rem;
+  overflow: hidden;
 }
+.member__photo img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center 22%;
+  filter: grayscale(100%);
+}
+.member:hover .member__photo img { filter: grayscale(0%); }
 
 .member h3 { font-size: 1.2rem; margin-bottom: 0.2rem; }
 
@@ -515,6 +524,43 @@ p { margin: 0 0 1.15rem; }
 }
 
 .member p { font-size: 0.95rem; color: var(--ink-soft); }
+
+/* Founder feature (larger photo + fuller description) */
+.founder {
+  display: grid;
+  grid-template-columns: 300px 1fr;
+  gap: 3rem;
+  align-items: start;
+  margin-bottom: 3.5rem;
+}
+.founder__photo {
+  aspect-ratio: 3 / 4;
+  background: var(--paper);
+  border: 1px solid var(--rule);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: var(--muted);
+  font-family: var(--sans);
+  font-size: 0.8rem;
+  letter-spacing: 0.04em;
+  overflow: hidden;
+}
+.founder__photo img {
+  width: 100%; height: 100%;
+  object-fit: cover;
+  object-position: center 20%;
+  filter: grayscale(100%);
+}
+.founder:hover .founder__photo img { filter: grayscale(0%); }
+.founder__bio h2 { font-size: 1.9rem; margin-bottom: 0.25rem; }
+.founder__bio .member__role { margin-bottom: 1.1rem; }
+.founder__bio p { color: var(--ink-soft); }
+.founder__bio p:last-child { margin-bottom: 0; }
+@media (max-width: 760px) {
+  .founder { grid-template-columns: 1fr; gap: 1.5rem; }
+  .founder__photo { max-width: 240px; }
+}
 
 /* =========================================================================
    Contact
@@ -530,7 +576,7 @@ p { margin: 0 0 1.15rem; }
   margin: 0;
   padding: 0;
 }
-.contact-list > div {
+.contact-list li {
   padding: 1.1rem 0;
   border-bottom: 1px solid var(--rule);
 }
@@ -881,62 +927,4 @@ figcaption b { color: var(--ink-soft); font-weight: 600; }
   .archive__date .tag { margin-top: 0; }
   .article__body { font-size: 1.08rem; }
   .section__head { flex-direction: column; align-items: flex-start; gap: 0.3rem; }
-}
-
-/* =========================================================================
-   Additions: abstract, references, team photos, research filters
-   ========================================================================= */
-.abstract {
-  background: var(--paper);
-  border: 1px solid var(--rule);
-  border-left: 3px solid var(--accent);
-  padding: 1.6rem 1.8rem 0.6rem;
-  margin: 0 0 2.8rem;
-}
-.abstract h2 {
-  font-family: var(--sans);
-  font-size: 0.75rem;
-  font-weight: 600;
-  letter-spacing: 0.14em;
-  text-transform: uppercase;
-  color: var(--accent-ink);
-  margin: 0 0 0.8rem;
-}
-.abstract p { font-size: 1.05rem; color: var(--ink-soft); }
-
-.article__body ol { padding-left: 1.4rem; margin: 1.4rem 0; }
-.article__body ol li { margin-bottom: 0.9rem; }
-
-.refs { list-style: none; padding: 0; margin: 0; font-size: 0.95rem; color: var(--ink-soft); line-height: 1.55; }
-.refs li { padding-left: 1.2rem; text-indent: -1.2rem; margin-bottom: 0.7rem; }
-.closing-note { font-size: 0.92rem; margin-top: 2rem; font-style: italic; }
-.closing-note a { color: var(--accent-ink); }
-
-.team-grid--four { grid-template-columns: repeat(4, 1fr); gap: 2rem; }
-.member__photo { overflow: hidden; aspect-ratio: 4 / 5; }
-.member__photo img { width: 100%; height: 100%; object-fit: cover; object-position: center top; }
-
-.filters button {
-  font: inherit;
-  background: none;
-  border: 0;
-  padding: 0;
-  color: var(--ink-soft);
-  cursor: pointer;
-}
-.filters button:hover { color: var(--accent-ink); }
-.filters button.is-active { color: var(--ink); font-weight: 600; }
-.archive__item[hidden] { display: none; }
-
-.form-status { font-family: var(--sans); font-size: 0.9rem; color: var(--accent-ink); margin-top: 0.9rem; }
-
-@media (max-width: 860px) {
-  .team-grid--four { grid-template-columns: 1fr 1fr; }
-}
-@media (max-width: 620px) {
-  .abstract { padding: 1.3rem 1.2rem 0.4rem; }
-  .article-foot { flex-direction: column; }
-}
-@media (max-width: 420px) {
-  .team-grid--four { grid-template-columns: 1fr; }
 }

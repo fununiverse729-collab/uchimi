@@ -3,8 +3,8 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Contact · Uchimi</title>
-  <meta name="description" content="Get in touch with the Uchimi Economic Research Initiative.">
+  <title>Contact · Uchumi</title>
+  <meta name="description" content="Get in touch with the Uchumi Economic Research Initiative.">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Source+Serif+4:ital,opsz,wght@0,8..60,400;0,8..60,600;0,8..60,700;1,8..60,400&display=swap" rel="stylesheet">
@@ -15,7 +15,7 @@
   <header class="masthead">
     <div class="wrap masthead__inner">
       <a class="brand" href="index.html">
-        <span class="brand__name">Uchimi</span>
+        <span class="brand__name">Uchumi</span>
         <span class="brand__tag">Economic Research Initiative</span>
       </a>
       <nav class="nav" aria-label="Primary">
@@ -44,14 +44,23 @@
       <!-- Left: direct details -->
       <div>
         <dl class="contact-list">
-          <div>
+          <li>
             <dt>Email</dt>
-            <dd><a href="mailto:vasilis.ektoras21@gmail.com">vasilis.ektoras21@gmail.com</a></dd>
-          </div>
-          <div>
+            <dd><a href="mailto:hello@example.org">hello@example.org</a> <span class="muted">(placeholder)</span></dd>
+          </li>
+          <li>
             <dt>Institution</dt>
             <dd>La Garenne International School</dd>
-          </div>
+          </li>
+          <li>
+            <dt>Social</dt>
+            <dd>
+              <a href="#">LinkedIn</a> &nbsp;·&nbsp;
+              <a href="#">Instagram</a> &nbsp;·&nbsp;
+              <a href="#">X</a>
+              <div class="muted" style="font-size:0.85rem; margin-top:0.3rem;">Add real links when ready.</div>
+            </dd>
+          </li>
         </dl>
 
         <div class="prose" style="margin-top:1.8rem;">
@@ -63,24 +72,23 @@
         </div>
       </div>
 
-      <!-- Right: contact form (delivered by FormSubmit to the email above) -->
-        <form class="form" action="https://formsubmit.co/vasilis.ektoras21@gmail.com" method="POST">
-          <input type="hidden" name="_subject" value="New message from uchimi.org">
-          <input type="hidden" name="_template" value="table">
-          <input type="hidden" name="_next" value="https://uchimi.org/contact.html?sent=1">
-          <input type="text" name="_honey" style="display:none" tabindex="-1" autocomplete="off">
-
+      <!-- Right: simple form (front-end only; connect a handler later) -->
+      <div>
+        <form class="form" action="#" method="post" onsubmit="return false;">
           <label for="name">Name</label>
-          <input type="text" id="name" name="name" placeholder="Your name" required>
+          <input type="text" id="name" name="name" placeholder="Your name">
 
           <label for="email">Email</label>
-          <input type="email" id="email" name="email" placeholder="you@example.com" required>
+          <input type="email" id="email" name="email" placeholder="you@example.com">
 
           <label for="message">Message</label>
-          <textarea id="message" name="message" rows="6" placeholder="How can we help?" required></textarea>
+          <textarea id="message" name="message" rows="6" placeholder="How can we help?"></textarea>
 
           <button type="submit" class="btn">Send message</button>
-          <p class="form-status" id="form-status" hidden>Thanks, your message has been sent. We'll reply as soon as we can.</p>
+          <p class="muted" style="font-size:0.82rem; margin-top:0.9rem;">
+            This form is a placeholder and does not send yet. Connect it to an email service or
+            form handler (e.g. Formspree) before going live.
+          </p>
         </form>
       </div>
 
@@ -91,7 +99,7 @@
     <div class="wrap">
       <div class="site-foot__inner">
         <div class="site-foot__brand">
-          Uchimi
+          Uchumi
           <span>Economic Research Initiative</span>
         </div>
         <nav aria-label="Footer">
@@ -103,17 +111,11 @@
         </nav>
       </div>
       <p class="site-foot__legal">
-        © 2026 Uchimi Economic Research Initiative · A student project at La Garenne International School ·
+        © 2026 Uchumi Economic Research Initiative · A student project at La Garenne International School ·
         Views expressed are the authors' own.
       </p>
     </div>
   </footer>
-
-  <script>
-    if (location.search.indexOf('sent=1') !== -1) {
-      document.getElementById('form-status').hidden = false;
-    }
-  </script>
 
 </body>
 </html>

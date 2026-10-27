@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Borrowing Once a Day · Uchumi</title>
+  <meta name="description" content="Kenya's digital credit market has reached a scale that makes the usual framing of the debate, is a digital loan good or bad for the borrower?, close to unanswerable as posed.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Source+Serif+4:ital,opsz,wght@0,8..60,400;0,8..60,600;0,8..60,700;1,8..60,400&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="../styles.css">
+</head>
+<body>
+
+  <header class="masthead">
+    <div class="wrap masthead__inner">
+      <a class="brand" href="../index.html">
+        <span class="brand__name">Uchumi</span>
+        <span class="brand__tag">Economic Research Initiative</span>
+      </a>
+      <nav class="nav" aria-label="Primary">
+        <ul>
+          <li><a href="../index.html">Home</a></li>
+          <li><a href="../research.html" aria-current="page">Research</a></li>
+          <li><a href="../about.html">About</a></li>
+          <li><a href="../team.html">Team</a></li>
+          <li><a href="../contact.html">Contact</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <article class="article wrap wrap--reading">
+
+    <header class="article__header">
+      <p class="article__meta">Working Paper &middot; Access to Capital</p>
+      <h1 class="article__title">Borrowing Once a Day</h1>
+      <p class="article__subtitle">Digital Credit, Repayment Velocity and the Limits of the Debt-Trap Framing in Kenya</p>
+      <div class="article__byline">
+        <span>By <strong>Wentao Liu</strong></span>
+        <span>22 Sep 2026</span>
+        <span>18 min read</span>
+        <span>East Africa Series</span>
+      </div>
+    </header>
+
+    <section class="prose" style="margin-bottom:2.5rem;">
+      <p class="lede">Kenya's digital credit market has reached a scale that makes the usual framing of the debate, is a digital loan good or bad for the borrower?, close to unanswerable as posed. Safaricom reported that its Fuliza overdraft facility disbursed KSh 1.47 trillion in the financial year ending March 2026, a 49% increase, across 17.7 million customers at an average loan size of about KSh 218. Our own arithmetic on those figures implies roughly 6.7 billion individual loans in a year, about 18.5 million per day, or on the order of one loan per customer per day. At that frequency a digital loan is not a decision; it is a transaction setting. This paper argues that the welfare literature on digital credit has been framed around episodic borrowing, a household takes a loan, deploys it, repays it, while the dominant Kenyan product has become a continuous liquidity overlay on everyday payments. We reconcile three bodies of evidence that appear to conflict: experimental work finding genuine resilience gains (Bharadwaj, Jack and Suri find households with access are 6.3 percentage points less likely to forgo expenses after a negative shock), survey work finding widespread distress (CGAP reports roughly half of borrowers repaying late, 12% defaulting and 20% cutting food purchases to repay), and a mass credit-reporting failure in which over four million Kenyans were slated for removal from credit bureau blacklists. We argue these are not contradictory: digital credit reliably improves short-horizon resilience while reliably failing to build anything, and its institutional architecture converted trivial defaults into disproportionate exclusion. We close by identifying digital collateral, where a lender can remotely disable a financed asset, raising repayment by 13 percentage points in the leading experiment, as the most promising unexplored direction for Kenyan credit design.</p>
+    </section>
+
+    <div class="article__body prose">
+
+      <h2>1. The Question</h2>
+      <p>Earlier papers in this series traced a recurring pattern in Kenyan finance. Chamas persist despite near-universal mobile money because they supply commitment and risk-pooling that formal products do not. Land titling failed to unlock smallholder credit because fragmented plots and contested claims made titles unbankable. Youth-led firms are starved of capital in an economy awash with venture funding, because the available instruments are shaped for different firms. In each case the binding problem was instrument design, not access.</p>
+      <p>Digital credit is the natural next case, and the most consequential. It takes the transaction history that mobile money generates and uses it to underwrite collateral-free loans in seconds. It is the first financial product in Kenyan history to reach the bottom of the income distribution at scale, and it has attracted both strong experimental evidence of benefit and sustained reporting of harm.</p>
+      <p>The existing debate is polarized between a financial-inclusion framing (a previously excluded household can now smooth consumption) and a debt-trap framing (borrowers cycle through loans, cut food spending, and end up blacklisted). This paper's claim is that both framings assume a product that no longer describes the market's dominant form. The question we ask instead is: <strong>given that the modal Kenyan digital credit event is a sub-two-dollar overdraft occurring roughly daily, what is actually being measured when we measure its welfare effect, and which design features determine whether it helps?</strong></p>
+      <h2>2. Mechanisms</h2>
+      <h3>2.1 The transaction-cost collapse (why this works at all)</h3>
+      <p>Conventional lending carries fixed costs per loan, appraisal, documentation, collateral valuation, branch visits, that make very small loans unprofitable. This is the structural reason the poor were excluded, and it is the same fixed-cost logic that the land-title paper identified when it found smallholder plots too small to be worth a bank's foreclosure costs. Algorithmic underwriting from phone and transaction data drives the marginal cost of a lending decision close to zero. A lender can now profitably extend KSh 218. That is a genuine and underappreciated achievement, and no critique of digital credit should obscure it.</p>
+      <h3>2.2 The velocity trap (why the welfare question changes)</h3>
+      <p>Standard consumption-smoothing theory models borrowing as a deliberate intertemporal choice: the household compares the utility of consumption now against the cost of repayment later. That model assumes the decision is made, with attention, at a frequency low enough for deliberation.</p>
+      <p>When the average loan is roughly KSh 218 and the average customer borrows on the order of once a day, that assumption fails. A decision taken several hundred times a year is not deliberated; it is habituated. The borrower does not experience "taking a loan" but rather "the payment went through." The overdraft becomes invisible infrastructure, and the cost is experienced as a slow leak in the transaction account rather than as the price of a discrete credit decision.</p>
+      <p>This matters because the behavioural economics of high-frequency small charges differs sharply from that of discrete borrowing. Present bias, which is the standard explanation for over-borrowing, requires the borrower to weigh present against future. A habituated, automatic drawdown bypasses that comparison entirely. The relevant failure is not impatience but <strong>inattention</strong>, and the two call for different remedies: commitment devices address impatience, while salience and friction address inattention.</p>
+      <h3>2.3 Price opacity and the tenor mismatch</h3>
+      <p>Digital loans are priced as flat fees over very short terms. A flat fee reads as small in absolute terms while implying a large annualized rate, because the term is brief. As an illustration of the arithmetic alone, not a claim about any specific lender's pricing, a 10% fee on a 30-day loan corresponds to roughly 120% on a simple annualized basis. A borrower comparing "repay 11,000 on 10,000" against an alternative quoted as an annual rate is not comparing like with like, and a market in which borrowers cannot compare prices loses the competitive discipline that normally restrains them.</p>
+      <p>The short tenor has a second consequence that is structural rather than behavioural. A loan repaid from next week's income has almost no tolerance for an income disruption. Products built on weekly repayment transmit income shocks into default very quickly, which predicts that default rates should be extremely sensitive to aggregate conditions, a prediction we test below.</p>
+      <h3>2.4 The substitution question</h3>
+      <p>A frequently neglected question is what digital credit displaced. The plausible alternatives for a liquidity-constrained Kenyan household were chamas, shopkeeper credit, family transfers and moneylenders. The chama paper in this series found that savings groups work partly <em>because</em> they impose public, socially enforced discipline. If digital credit substitutes for chama participation, the household has traded a disciplining institution for a de-disciplining one: faster, private, available at 2am, and with no peer who will notice. If instead it substitutes for moneylenders, the welfare comparison is likely favourable. The direction of substitution is therefore central to the welfare verdict, and it is directly measurable.</p>
+      <h3>2.5 Collateral and the enforcement problem</h3>
+      <p>Unsecured lending to borrowers with no seizable assets relies entirely on reputational enforcement, the threat of losing future access and of negative credit-bureau listing. This creates a design trap. For the threat to deter default it must be severe; but when applied to a KSh 218 loan, a severe penalty is wildly disproportionate, and when applied at scale it degrades the credit registry's informational value. A registry listing a large fraction of the adult population no longer distinguishes good from bad risks, which destroys the very signal that justified the listing. We examine the Kenyan case of exactly this failure below.</p>
+      <h2>3. Evidence</h2>
+      <h3>3.1 Scale and velocity</h3>
+      <p>Safaricom reported Fuliza disbursements of KSh 1.47 trillion in the financial year ending March 2026, up 49% year on year, with Fuliza revenue of KSh 6 billion (up 46%), 17.7 million customers, and an average loan size of about KSh 218, down from KSh 241.</p>
+      <p>From those reported figures, our own arithmetic implies:</p>
+      <figure>
+        <table class="data-table">
+          <caption>Author’s own arithmetic on reported Safaricom FY2026 figures.</caption>
+          <thead><tr><th>Derived quantity</th><th>Value</th></tr></thead>
+          <tbody>
+            <tr><td>Loans disbursed per year</td><td>≈ 6.7 billion</td></tr>
+            <tr><td>Loans per day</td><td>≈ 18.5 million</td></tr>
+            <tr><td>Loans per customer per year</td><td>≈ 381</td></tr>
+            <tr><td>Loans per customer per day</td><td>≈ 1.0</td></tr>
+            <tr><td>Implied average rate</td><td>≈ 214 loans per second</td></tr>
+          </tbody>
+        </table>
+      </figure>
+      <p>These are derived, not reported, and depend on the average loan size applying across the full disbursement base. The implied rate of roughly 214 loans per second is the same order of magnitude as a 2021 press claim that Fuliza processed around 300 loans per second, which provides loose independent corroboration of the velocity, though the two figures do not reconcile precisely and the earlier claim may describe a peak rather than an average.</p>
+      <p>The headline comparison deserves emphasis: <strong>KSh 1.47 trillion is a sum comparable to a substantial share of national economic activity, assembled entirely out of loans averaging under two US dollars.</strong> Not all 17.7 million customers will be active, so per-active-user frequency is higher than the one-per-day average implies.</p>
+      <h3>3.2 The causal evidence is positive, and narrowly so</h3>
+      <p>The best-identified evidence on Kenyan digital credit comes from Bharadwaj, Jack and Suri's study of M-Shwari. They report that 34% of those eligible take a loan, that the loan does not substitute for other credit, and that households are <strong>6.3 percentage points less likely to forgo expenses due to negative shocks</strong>. Their own summary conclusion is that digital loans improve financial access and resilience but are "not a panacea" for credit market failures.</p>
+      <p>Two features of this result deserve attention. First, it is a <em>resilience</em> finding, not an investment or income finding: the benefit is the ability to absorb a shock without cutting something, which is real and welfare-relevant but is not accumulation. Second, the finding that digital loans did not substitute for other credit is important for Section 2.4: in that setting, digital credit was additive rather than displacing existing arrangements.</p>
+      <h3>3.3 The survey evidence shows widespread repayment stress</h3>
+      <p>A CGAP survey of more than 3,000 Kenyans found that more than a third of mobile phone owners had used digital credit, and that more than half of digital borrowers had a loan outstanding at the time of survey. Borrowers skewed young, urban and male. Household purposes were the main use, business second, with medical needs or emergencies accounting for under 10% of borrowers.</p>
+      <p>On outcomes, about half of borrowers reported repaying late at some point, 12% reported defaulting, and 20% reported <strong>cutting food purchases to repay a loan</strong>. CGAP also reports that a significant minority did not understand loan costs or terms, and that this poor transparency correlates with higher late repayment and default.</p>
+      <p>Two observations follow. The use-case distribution undercuts both polarized framings: if emergencies account for under 10% of borrowing while routine household needs dominate, then digital credit is mostly financing ordinary consumption timing rather than either catastrophe or investment. And the food-cutting figure establishes that for a substantial minority, repayment competes directly with basic consumption rather than with discretionary spending.</p>
+      <h3>3.4 Default is extremely sensitive to aggregate shocks</h3>
+      <p>A household survey conducted by the Central Bank of Kenya, FSD Kenya and KNBS, reported in December 2021, found that <strong>50.9% of respondents had defaulted on mobile loans</strong>, which the reporting attributed to job losses and business closures during the Covid-19 pandemic.</p>
+      <p>This figure should not be read as contradicting CGAP's 12%. The surveys differ in population, timing and almost certainly in the definition of default, and the 2021 survey was fielded during a severe income shock. Read correctly, the gap is itself the finding, and it confirms the tenor-mismatch prediction in Section 2.3: a product repaid from near-term income converts an aggregate income shock into mass default with very little lag. Any assessment of digital credit's welfare contribution that relies on normal-period default rates will systematically understate its fragility.</p>
+      <h3>3.5 The credit-reporting system failed at scale</h3>
+      <p>The enforcement trap described in Section 2.5 materialized in Kenya. In October 2020, Business Daily reported that more than 337 unregulated digital lenders had been barred from forwarding defaulters' names to credit reference bureaus, with the number of firms permitted to report falling to 2,254 from 2,332 a year earlier. In September 2022, reporting indicated that <strong>more than four million loan defaulters were to be removed from credit bureau blacklists</strong>, following a presidential directive that the Central Bank end blacklisting and move to a scoring system that assigns defaulters a low grade rather than excluding them from the financial system.</p>
+      <p>The economics here are worth stating plainly. A blacklist is a binary signal. Applied to defaults that may be a few hundred shillings, it imposes a penalty, exclusion from formal credit, that is orders of magnitude larger than the obligation. Applied to millions of people, it stops conveying information: a registry in which a large share of the borrowing population is negatively listed cannot distinguish a chronic defaulter from someone who missed a KSh 200 repayment during a bad month. The shift from blacklisting to graded scoring is, in this reading, not leniency but an attempt to restore informational content to a signal that mass digital lending had destroyed.</p>
+      <h3>3.6 An alternative architecture exists</h3>
+      <p>Gertler, Green and Wolfram's study of <em>digital collateral</em>, published in the <em>Quarterly Journal of Economics</em> in 2024, tests a different enforcement mechanism. In Uganda in 2019-20, households that had already repaid a solar home system loan from Fenix International were offered school-fee loans of about UGX 300,000 (roughly USD 81), secured by the solar system itself: on missed payment, the lender could remotely disable the device until payment resumed. The randomized design included secured loans, unsecured loans, and a "surprise unsecured" arm in which borrowers offered a secured loan received an unsecured one, which separates screening from incentive effects.</p>
+      <p>Take-up was 44% for secured loans versus 51% for unsecured, indicating that collateral screened out riskier borrowers. Repayment was <strong>13 percentage points higher</strong> for secured loans: 59% versus 46% at 100 days, and 70% versus 57% at 150 days. Roughly one third of the gain came from screening and two thirds from improved repayment incentives. Downstream, school enrolment rose about 3 percentage points (from 88% to 91%) and households spent 26% more on school-related costs, around USD 20 per child. Secured lending significantly improved lender profitability without reaching profitability outright, which the authors attribute partly to relaxed screening standards adopted for the study.</p>
+      <p>This is the clearest demonstration that the choice is not between unsecured algorithmic lending and no lending at all.</p>
+      <h2>4. Argument</h2>
+      <p>The three evidence bases reconcile once the product is characterized correctly.</p>
+      <p><strong>Digital credit reliably improves short-horizon resilience and reliably fails to build anything.</strong> The experimental finding, a 6.3 percentage point reduction in forgone expenses after a shock, is a genuine welfare gain, and it is a <em>smoothing</em> gain. The survey evidence that routine household needs dominate use, with emergencies under 10%, points the same way: this is a timing technology, not a capital technology. Nothing in the evidence suggests digital credit builds assets, finances growth, or moves households across the income distribution. Framed against the series' recurring finding that Kenyan households and firms lack mid-range instruments, digital credit fills the gap at the very bottom of the term structure, days, not seasons, and leaves the rest of the gap untouched.</p>
+      <p><strong>The distress is real and is concentrated, not universal.</strong> Half of borrowers repaying late and 12% defaulting in normal conditions, with 20% cutting food to repay, describes a product that works adequately for most users and poorly for a substantial minority. The CGAP correlation between weak comprehension and worse outcomes identifies who that minority is likely to be, though as a correlation it cannot rule out that borrowers who misunderstand terms differ in other ways that independently raise default risk.</p>
+      <p><strong>The velocity finding reframes what intervention could help.</strong> If borrowing occurs roughly daily at sub-two-dollar amounts, then disclosure at the point of each transaction is close to useless: nobody reads a disclosure 381 times a year. This is the paper's most consequential analytical claim, and it cuts against the dominant regulatory instinct. The behavioural problem is inattention to a cumulative flow, not misjudgement of a discrete decision, and the appropriate remedy is <strong>periodic aggregate feedback</strong>, a monthly statement of total fees paid, expressed in shillings, rather than per-transaction disclosure. A borrower who learns that small overdrafts cost them a specific and visible sum last month receives information they cannot get from any individual transaction.</p>
+      <p><strong>The institutional failure was disproportionate enforcement, not lending itself.</strong> Mass blacklisting over trivial sums was a design error with a precise economic signature: it imposed a penalty unrelated in magnitude to the obligation and, by its scale, destroyed the informational value of the registry. The move toward graded scoring addresses both problems simultaneously.</p>
+      <p><strong>And the enforcement problem has a solution the Kenyan market has not adopted.</strong> The digital collateral results show that a lender able to disable a financed asset achieves materially better repayment, 13 percentage points, roughly two thirds of it from incentives rather than selection, while screening out borrowers for whom the loan was a poor idea. This connects directly to the land-title paper's conclusion. That paper found Kenya's financial sector routing <em>around</em> land title through warehouse receipts, movable-property registries and transaction-history lending, and argued that the binding problem was that titled land was the wrong collateral instrument for this market. Digital collateral is the logical completion of that argument: an asset the lender can control remotely solves the enforcement problem that land title was supposed to solve and could not, at a plot size and loan size where foreclosure was never viable.</p>
+      <h2>5. Implications</h2>
+      <ul class="impl-list">
+        <li><strong>For regulation:</strong> Shift the disclosure obligation from per-transaction pricing to periodic aggregate reporting. A monthly statement of cumulative fees paid, in shillings, targets inattention, which the velocity evidence identifies as the operative failure. Per-transaction annualized-rate disclosure remains worth requiring, but should not be expected to change behaviour at this frequency.</li>
+        <li><strong>For credit infrastructure:</strong> The move from binary blacklisting to graded scoring is well founded on information-economics grounds, not merely on fairness grounds. Minimum thresholds below which a default is not reportable would further protect the registry's signal value.</li>
+        <li><strong>For product design:</strong> Tenor and repayment scheduling deserve as much attention as price. The 2021 default spike shows that products repaid from near-term income fail en masse under aggregate shocks; aligning repayment with income arrival patterns would reduce that transmission.</li>
+        <li><strong>For the next generation of products:</strong> Digital collateral is the most promising untested direction for Kenyan credit, particularly for the asset-financing gap identified in this series' boda boda paper, where motorcycle purchases are already financed through hire-purchase arrangements that effectively use the asset as security. Formalizing and studying that mechanism is overdue.</li>
+        <li><strong>For how success is measured:</strong> Resilience and accumulation should be reported separately. A product that reliably delivers the first while never delivering the second is valuable, but describing it as a route out of poverty misstates what the evidence shows.</li>
+      </ul>
+      <h2>6. Original Research Proposals</h2>
+      <p><strong>(a) A comprehension-and-outcomes survey.</strong> Ask active digital borrowers to state the total cost of their most recent loan, then compare measured comprehension against self-reported late repayment and default. This converts the CGAP correlation into a locally replicated, more precisely measured result, and the instrument is short enough for a student team to field.</p>
+      <p><strong>(b) The substitution question.</strong> Section 2.4 identifies the direction of substitution, from chamas, shopkeeper credit, family or moneylenders, as central to the welfare verdict and essentially unmeasured in Kenya. A survey asking borrowers what they would have done in the absence of the digital loan, cross-tabulated against current chama membership, would be a genuinely novel contribution and would link directly to this series' chama paper.</p>
+      <p><strong>(c) An aggregate-feedback experiment.</strong> The paper's central regulatory claim, that periodic cumulative fee statements outperform per-transaction disclosure, is directly testable. Randomizing a monthly summary of total fees paid among a sample of frequent borrowers, and measuring subsequent borrowing frequency and fee expenditure, would test the inattention mechanism rather than assuming it. This is the most ambitious of the three and would require a lender partnership, but it is also the one where the evidence base is currently empty.</p>
+      <h2>7. Limitations</h2>
+      <p>The velocity calculations in Section 3.1 are our own arithmetic applied to reported aggregates, and they assume the reported average loan size applies across the full disbursement base. If the average is computed over a subset, or if a minority of heavy users accounts for most volume, the per-customer frequency figures will misstate the typical user's experience considerably. The claim that the modal borrower transacts roughly daily should therefore be treated as an order-of-magnitude inference, not a measurement. Distributional data on borrowing frequency, which Safaricom does not publish, would settle this directly and is the single most valuable missing input to this paper.</p>
+      <p>The two headline default figures (12% and 50.9%) come from different surveys with different samples, dates and definitions, and this paper interprets the gap as shock sensitivity without being able to rule out that definitional differences explain much of it.</p>
+      <p>The CGAP findings are summarized from the survey's public findings page rather than the full report, which may contain loan-size, repeat-borrowing and credit-bureau detail that would sharpen the argument. The 2021 default figure is taken from press coverage rather than the survey publication itself, and the credit-bureau delisting figures likewise come from press reporting rather than Central Bank releases.</p>
+      <p>The Bharadwaj, Jack and Suri results concern M-Shwari specifically, a bank-linked product that differs from an overdraft facility like Fuliza in tenor, pricing and use pattern; extending their resilience finding to the overdraft segment is an inference this paper makes but does not establish.</p>
+      <p>The digital collateral evidence comes from Uganda, from a solar-financing context with an existing repayment relationship, and from loans roughly two orders of magnitude larger than the Kenyan overdraft average. Its applicability to Kenyan small-ticket lending is a conjecture about design direction, not an evidenced claim about transferable effect sizes.</p>
+      <p>The annualized-cost illustration in Section 2.3 is arithmetic, not an estimate of market pricing, which varies by lender and product.</p>
+      <p>Finally, this paper does not weigh resilience gains against distress costs in a single quantitative welfare framework, and so cannot state whether the average Kenyan borrower is better or worse off. It argues only that the two effects are separable, that they fall on partly different populations, and that the design features determining which one a borrower experiences are identifiable and changeable.</p>
+
+      <section class="notes" aria-label="References">
+        <h2>References (selected)</h2>
+        <ol>
+          <li>Bharadwaj, P., Jack, W. &amp; Suri, T. (2019). <em>Fintech and Household Resilience to Shocks: Evidence from Digital Loans in Kenya.</em> NBER Working Paper 25604.</li>
+          <li>Gertler, P., Green, B. &amp; Wolfram, C. (2024). Digital collateral. <em>Quarterly Journal of Economics.</em> Summarized in the Berkeley Haas IBSI research brief.</li>
+          <li>CGAP. <em>A Digital Credit Revolution: Insights from Borrowers in Kenya and Tanzania.</em></li>
+          <li>Mwaniki, C. (2021, December 16). Half of mobile phone borrowers in default. <em>Business Daily Africa</em>, reporting the CBK, FSD Kenya and KNBS household survey.</li>
+          <li><em>Business Daily Africa</em> (2020, October 12). Report on unregulated digital lenders barred from CRB reporting.</li>
+          <li><em>Business Daily Africa</em> (2022, September 28). Report on removal of over four million defaulters from CRB blacklists.</li>
+          <li>Safaricom FY2026 results, as reported by <em>Capital FM</em> (2026, May 11): Fuliza disbursement, customer and average-loan figures.</li>
+          <li>FSD Kenya, Central Bank of Kenya and KNBS. <em>FinAccess Household Survey</em> series.</li>
+        </ol>
+      </section>
+
+      <p class="muted" style="font-size:0.95rem; margin-top:2rem;">
+        <em>Prepared as part of the East Africa Microeconomics Research Series. This is a student working paper that synthesises existing research and published data rather than presenting original fieldwork; feedback and data corrections are welcome via the <a href="../contact.html">contact page</a>.</em>
+      </p>
+
+    </div>
+
+    <nav class="article-foot">
+      <a href="education-employment-mismatch.html">&larr; Previous: Education-to-Employment Mismatch</a>
+      <a href="fertilizer-subsidy-maize-productivity.html">Next: The Wrong Instrument &rarr;</a>
+    </nav>
+
+  </article>
+
+  <footer class="site-foot">
+    <div class="wrap">
+      <div class="site-foot__inner">
+        <div class="site-foot__brand">
+          Uchumi
+          <span>Economic Research Initiative</span>
+        </div>
+        <nav aria-label="Footer">
+          <a href="../index.html">Home</a>
+          <a href="../research.html">Research</a>
+          <a href="../about.html">About</a>
+          <a href="../team.html">Team</a>
+          <a href="../contact.html">Contact</a>
+        </nav>
+      </div>
+      <p class="site-foot__legal">
+        © 2026 Uchumi Economic Research Initiative &middot; A student project at La Garenne International School &middot;
+        Views expressed are the authors' own.
+      </p>
+    </div>
+  </footer>
+
+</body>
+</html>
